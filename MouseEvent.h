@@ -2,14 +2,14 @@
 
 #include <SFML/Window/Mouse.hpp>
 
-#define UNDEF_PTR						nullptr
-#define UNDEF_VECTOR2I					{ 0, 0 }				
-#define UNDEF_VECTOR2F					{ 0.0f, 0.0f }				
+#define UNDEF_PTR	nullptr
+#define UNDEF_VECTOR2I	{ 0, 0 }				
+#define UNDEF_VECTOR2F	{ 0.0f, 0.0f }				
 
-#define DELTA_TIME						1.0f
+#define DELTA_TIME 	1.0f
 
-#define MOUSE_DOUBLE_CLICK				2
-#define MOUSE_DOUBLE_CLICK_DELAY		0.2		// seconds
+#define MOUSE_DOUBLE_CLICK 		2
+#define MOUSE_DOUBLE_CLICK_DELAY 	0.2 // seconds
 
 
 namespace sf {
@@ -21,7 +21,7 @@ class MouseEvent {
 private:
 	typedef struct {
 
-		sf::Mouse*		Reference;
+		sf::Mouse*	Reference;
 		sf::Vector2i	Position;
 
 	} Cursor_t;
@@ -214,10 +214,10 @@ public:
 private:
 	void Init(sf::RenderWindow& window);
 
-	sf::RenderWindow*		m_WindowReference;
-	Cursor_t				m_Cursor;
-	MouseDoubleClick_t		m_DoubleClick;
-	MouseClick_t			m_Click;
+	sf::RenderWindow*	m_WindowReference;
+	Cursor_t		m_Cursor;
+	MouseDoubleClick_t	m_DoubleClick;
+	MouseClick_t		m_Click;
 
 };
 
